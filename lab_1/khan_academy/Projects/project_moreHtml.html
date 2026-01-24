@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>Project: Recipe book</title>
+        <style>
+            .buldak{
+                color : palevioletred;
+            }.dimlama{
+                color : green;
+            }p{
+                color :darkred;
+            }body{
+                background-color:thistle;
+            }.pumpkin{
+                color: orange;
+            }
+        </style>
+    </head>
+    <body>
+
+        <h1>Amigo's Recipe Book</h1>
+        <h2 id="start">Contents:</h2>
+        
+        <ol>
+            <li><a href="#recipe1">Recipe #1</a></li>
+            <li><a href = "#recipe2">Recipe #2</a></li>
+            <li><a href = "#recipe3">Recipe #3</a></li>
+        </ol>
+        
+        <h2 id="recipe1">Recipe #1</h2>
+        <img src = "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxITEhUTExMWFhUXGRsYGBgYGBcYGRgYFxcXGRoYGBgbHSggGhslHRgaIjEhJSktLi4uGh8zODMtNygtLisBCgoKDg0OGxAQGzAlHyUtLy8tLy0wLS0tMi0vLS0vLS0tLS0tLS0vLS0vLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAKgBKwMBIgACEQEDEQH/xAAbAAACAgMBAAAAAAAAAAAAAAAEBQMGAAECB//EAD8QAAECAwYCBwYFAgYDAQAAAAECEQADIQQFEjFBUWFxBhMigZGh0TJCUrHB8AcUI3LhYvEkQ4KSssIVotIz/8QAGgEAAgMBAQAAAAAAAAAAAAAAAwQAAgUBBv/EACwRAAICAgIBAwQBBAMBAAAAAAECABEDIQQxEhMiQQVRYXEyQoGR4TPR8BX/2gAMAwEAAhEDEQA/APP7ddM2UASMaM9w30hRNsAV7FFfCo5/tJ+vjFyuLpTImMlfZOVfChhzeHQxM5Bm2dlDPs6fuSzjmKQiMzIaYRgoCLE8kmIUksoEHYxoKi42u6yP05qC43z5hUILfcqk1Q6htqPWGUygwJUiLsUaIjg0jYMFlZvBEllsa5igiWlS1HIJDn+3GLF0W6ITrUyiDLlfERVY/oH/AGNOceuXF0dkWVGGWgDc5k/uVmfkNouqFpUkCUDo5+GalMu0qYfAn/sv/wCfGPRbruiz2dIRKlpG7Aef8uYYFdWaOUcmZ6bRegNCTfzJAc/vaNoEcgxJJGId2oz7ovc5UllIcbd0SBBaoD05d0RfmAHcKoNASOIcDOB5t8oS3ZJ5kDxAcwPJysOIW7VLJhyOfaIXMem3Hav1iCaPKAje6GOIkk5YXGEfWARbkkVxn/VSMvL9ZwL1uOpwMp71GKlDviFS4CXaZZ93zUT4kxGZyHdILbKqfSEm+tr8LGB9Ob5MImWtOh+zEcy0a1aBZ1uUzMkDIdkAjlTzgJNsEtSVKBUEuyXzURTlEH1Xy0BI3B8B5Ex3OVhYatrQOc4hUqALPfa5oKFiWSTQsxTwDH5wQiaw7SQQH4Hx174t/wDQINMNQSYA4sGv3JSsuNo4WQQxrEU2oBTiHyjTH3e0MuOT5QZefibR1+5DxMgFidqKhkX5/Qxyqa2dIHVPD5tGysGmeXDwO8MJmU/xMC2MjsSYqiNSohWo0ALNm4enrGhNBo9fnF/U+8oUhCLURxHn4wXJnpV6awrMcGL+Up4x/wDlyQ4DjhHBkK2ML7Hea0altx9d4aqvghOMl07s7c4KtGUIIkHUnaN/l1bGNr6QpDOU1y7OcBzulUse94JPpFis5cMFkVtG/wAruQIrtt6byU5qPikfV4rt4fiEP8tBPN2+kVqdnoExctOZeK7bukEgLUMaA2mIbDjHm959JbTOcFZSn4U08SKwnIiVJMiwdG+l1qsawqWskD3ST5HMRX4yIVB0Z0Gp75cfSKxXojCvDKngVBYA8eHMU3AhJfUn8jNImy04WoVAEedI8hkzlJUFJJSoFwQWIPAx6P0e6Yptkr8lbyCDREwiqTp3bjwrQqti9M+Q2IQNYqIb1ttmnqJMtNfelsgjuHZI4MOcWDon+H6SoTZ4KhQplqDd8wf9fHaD+inQNMmcqZMIWpKj1YHaSkD33947bCueV9LAYQDxbOtHhzGgA8j1Asb0JuTKCAwHD74R3JSZhAQaqyOzZlvvSOC9G38m9Y2iaUlK05pL8+EFdjRqcUCRWmTMkqAUoqSWoQKcQ3yiXG1Ce+kC33fJnUArly/mFU+aTVR7v4jFzfVseK1XZj+PhO+zqMpl4gHsh+OTesCTbcs5qPIdkeVfOAxN2BifBLWHKsCttD6Rj5vqHIzHbUPsJpY+Hjxi6uaStSsqDhQcuMRqk5l46lym9lST3+rRxapcxgpQoaPpCZTIfd8RgFeosXeZCsJSyXYvnwI4QylWzsswbdq9xgGYlOZS7RPZrNNm0Ql25D5wZgHoItGCRWx2XaxCZakmpSpXkImE13GFKeNYR22wW6iSFIALh1Uf/SSD5xZzc7S0rK2cOCQQOR2gh4zgUK/IlE5Ks27/ABFs6WRVxAduuzrEEBRS+ucFfm5QUpCpgxJ0q2XxZRPNfCNiQx05Qv4ZMZBAhSyZAReojsN0GSXGI8SGDcIf3MFzpmAkpZJNKEmjOdc4FmTCXGLL7yg65UFExSyoABBc88oaw5S2QeZ/cXyYgi+2cKlrUwxk7bwpv64p/WAIClBm7JIrmxD0NYe3fOXJqUu5otnZNPAneGsmYkJC2oV5cNX4w/iVSInn8jqVObZDhDgvxzBgKbJmI3bxi7KsqJiFKSSGPlvEBsGgIJ4Bn5beMQ8VRtDUuOSTpxcpqLUPecRkya5elMos8y6AxdIJ5V74TLuM1wkjzirvkUUZAEY2ILLtQ1I+94mMCWi65iNAQTptyjuzEildSOFcoY4/KJPi0HlwgCxJTG5E9SC47xoY0ogZ0iM1yh4NFiIn6T9GzOSZ1kUoKHtyQogHigOwP9OR0Y0PnEwl+0S/F/rHr8uaUlxn90PCFHS/o4m0oNps6f1hWYge/wAQPj/5c8zK1wZE81wxvDGA7R0EHWLys4AjZRxjolsoiMSSZGRgjcSSai9fhx0Z61QtMwOhJaWkj2lg+0d0pPnyirXFdarTPRJTTEe0fhSPaV4ebR7zdllRKlpSkYUpASkbARfGtmVY1DAMIYd5EaRnuRkphkcwCNiIFtgmFQEtwcyRVgDkOf04xlmtKi6FUVUgswO7jeBvmX1PE/2hFQ+NiFTFEAlx3wstVsUosigyJ9I5vCeScIOQqRvrAQtFKUjC+o/UWJOPFr7zT4nEBHk0lnKwMz6vz4wNMmvziYpKsIdhqSfukZZZSOsIWewHqNdoxVUEzSvxEgUtQDsQN9PGNLSpgWLHJ9YbWS0lUwSwwQDqHfPi0ATr1Si0KDBYGRNACagMRlWGhxwy2m4B+T4fy1JrqUhPbmFVMglIPi5pHV5TVTEg4mTUhPM0747uxf6a1IQK0U9Wr7I5ZQDjJBBLNkGgbM6DwqXTxc+YM2tKMAGoz5c4Ls1swoZGIN7RG1fvuhYbOWJcMCQa7bbxHeInLk9VJzWpixw9kDc5u8RMfkaJqcyuFXQuOZV9ApKUgHMK7T+W8ak3gVdhayEfCBUvoI81tV32ySsfpzEMWJAd61qlxF0uCyzVDrJhWAx9pnLNhwv2gXKtNB3OnhEe4PYqIpy9+JSiZzet0oJqCASCSKOUvR+/KG1gBKcCBiQkdofUcfSOzjUgSy4S75ZHd83g+zXWQygok+8xy5E5wCmJFXQh/at/cxIqzursgcnfzasF2FFWUlT7U/5P5Q2kXatFU1Dl8SQ/yju2IWlKgEDhhdi/n4GKFBVjuX9S9QV5ktzknjlzBBMbF9SCgylLTj2qKv8AEKRqReZSgAhiHzY5nI0qcs4qVsu+YkrUlOJywKuyUkl3bWjh4ZxUo9p7EWzs19XuWWVeOFykkOCk5KBHNxHabSAoEKcNqw7s2hT0ZsSpUskqZSjliNNizMX5iCbUlCU5+9oXJpSBO+RKAaxDY1VxZWobabaklTVcmr+EK7RbVEsSSNK/SIjahkAAOIBPi0RzRMCVdWAZh9kqdhuWap20ivi7t/LuX8kUVUIE7EGyAfU1fnAs6WRk4B+9Yn/LzEJSZpSrF7ycuIdhvE0yYOrYuwLgMKmgqYGylHpjLr719oixSBtllw4xDNIT2hkc9v42jaZjRpc3NnrqzjlG2jKUAHczWBDTtUbs9pMtQUO8biIZS9No1MhxGsXF2WjEPT64gn/GSQOrWR1gHurJ9rkTQ7K/dSk449guualQVImB0TAQxyqGI7x8o8t6QXUqyz1yVVALpPxINUnwoeIIhhTYgSKgLxqOXjHi05OYyMEdyZRUoJFSSAOZLCJJPS/wuunDKVPI7Uw4U8EJNfFT/wC0R6Icmhbc9jTKlolpylpCRxYZ9+ffBwVn984YWgsp2YXdlpShZxp7LYSRpQEHdhl3vpCy+SkrGBQzzBcb6bxNNmhIJOWZ14QuJl4cRmFy5YCtdBpGH9UfxUBTs/21NHhp5NZ6kqrUpYCCEsNW7R9TERuo4gAKGuInKj0EcyyohgGTma1P7vSCbmsCpqicWEVArUn6RiKWyEIdn7zSJCgkaE6tllloSGLkDWofl9+UCzUoDJSHUS5OT8CIYSrBLCKlRW5DvQEFmgIgYDimDMs4Ci3P77oqw+OpZD+5FMC8REtJFKsX8WitW67FhRKDVXaZ3bfwbKGlutLJcnQlmCT/AEuW1FR3QNJvJLBQSxUmtXZ1FPfRvOD8dHG0EX5bY6Afswe77WsLKSvtU7PaFRmxo8N5M0KCyQAQ3ZetdRAabmJmoWSXejBiXDU4l4nNjwzFEA0OpOh47F6RbO+N+4vxkzIe9TciUXKWrQw0l3cpJc5ttDLo7Z3dZTUnPgNIYS7KrNQALnJ2juHhlwD94bJyqNRfY7AFdpTk7F6dxhtIsA2ieRKaDZaI2sPHVBQiGTKWNwSXYxtGp93/AA57bwzSnaJEJO0M+ipFQPmZ4/Z7fPE5SFzJuZftL7KtWANItNw3iSVS1EqA7QJdxuHJrv4xcJ93y1EqKEvuwfxhbNuwBykZxl8jiuiUNzuH/k8idRPaUIUsnDw1B5gbwnnWwlS0dhgakkA8AQ+dYtU2wnNRJ4Vbxziu9IujctaxOUaYQFByDR6/1c/s5npsb9TVTUGQf07i1ClJqkMBrkK7af3jVqlKUygxJowzfjvBs+0ICerRLNRyCW1JOrHLjGXPTErUa8D/ACPlAAFuMkmovNlwljRQcK4EFm+XjBkhTHEkZVrtGrVL7RNCN+Md2GWFKA2LnKp0H3tDmIWbEUfQ3J5comUEqT2fEMc3G1YgvKxqSxFUny4GG1qmKT2SWSRmkZc9YAlW5KnRVwWyI0ehOdNobycdMgo/5g8XIbEbH+JVrTLwqcCmsZLnZN/EN7ws5SD8JzEV2YspUQKAwviZsT+JjGVVyL5rJppUKu9Rlls0d4nDxF1uiafL7rG8tX/iNLF2SOoi/U0VMxGeccfiDYRaLIi0pHble1+xRZXgpjyKo6XDe4sMxEyQuqVAuP6VDCr5w2h3AONTxgxqJrXZzLWuWr2kKUk80kg/KITBoKbAh50PsuO2SE6Y8X+wFXzAhOkRaPw6S9tTwQs/IfWIO5J63JNO+O0/zpXP61iFJo3Ax1N4fdf7wRjqRRA7ymsyRTU9/wBmB5EhBIJyPf8AesC2qZ2idqeERSrSWjyHNyHLmLfE3uLjpKjO0zwkFIIPLWIbtmLKvbwDeOLIcRPZKiRpniP8w1lWJa2QWQcu1pyHOAJjqiIRmAHiYVbMHV4AogmqjoocN84RzLOEEEOUk0JBrBqrKtD5EPhcsRRqEH1hhOsxKMC1oIblyoSAeedYJkJY7FGUU+IoGxKT07sxQAUKdJLqeudQTv8AzyhDZjMUyEpxE0d614cGEWu+rEVAoxOk0NXD7trAl3Wbq04AAS1Vamv2Ibx8kLjqtxTLxDkyWeoxXibtU5HL+I7uuQpcwJ015COk2ZZUkFDDDk5q2tTDW47IoEsUvTFXLOnz8ISxr5NHMjBV0ZZLHMKRRgkUAEFIBNWMRWaSdoaSFFso9Hx8ZAozEyNZkMqREVoSRBqbS8bWkKENlQRqD8iO5Sb7v2fKm4JeBsILlKiakjPEBpDDoffk6dMUicQeziSyQGYhxTd9doXdL7GtC0rSCXGEsCcnIoO+BujAni0S1GWoJqCcBDDCcyByzhPGcgybvuBdj5z0hQERmWI46yODa0iG8uVRsmFVSepHbpIIbWEt6JlpQFEVOW+xp95Q4tU9ywIB0cgQlvW0gqqHKdHpr5+kYXOdSxImjxlIqVu2oKR1uYUWfalKd0QKxiWSlxizbLMMDDA2yWo4VJxJBoDR+fHlHaAlKkzAp0D3SHNQzOPrGf4oaNx/yYaIiiZaZKEfqzRi0SKlNT6ecZdl6S1BRlmopUMR/FM4VdKLsndZ1iUuCA7Z6s45N4Qlu4rTNFCDk3A5vDuFfFdTOy5WL0RLqq0lRbNzvQceXrHckAEUBIGevKB5KCQQE5ByYlshrTzrBlczpUTu8A4is3nKdL6iLRblsk074AsMtJcLbCo1LVHI7njSAcg7U/MPg0CIgs5dIMczVsCTpWMmyurmKR7rkp4jSNmNLCwZRUVyKVapyYOuCY04cQR5QAYIuo/rS+cMA7gj1Kd+INlwW6a2S8Mz/ckP/wCwVFbMXb8U0NaZZ3lDyWv1imNDUXnIXFp/DmaPzqRuhY8gfpFVhx0RtIl2yQo5Y8P+8FP/AGiCSe1PGlKAGw+kcLNYDvZREsq2B847lYopYSyCzUUW+1YiSlyHNQKeMd2KQVZA0DmnzMFXLZUrlAzCUBqDJ2Bo/H71hlYitCcMgJWlTuTXKlX2fStRHlWpmN/JPW5toxUam7qtSkJNGIIwc3cmHltxTEdYUAKVQKBID7EaHvhfdt3kpJLKUkuSC7NmONIOvG2OlBS5QWdI05Nxg+MHwIbqtf8AvxBObbXcFVZ8CAFua5kmqjR4GXZypZSlZdn4lgMjD+2JXOSk9WWGzA+B0hBZrtmKWcTpPsmoO+ojmbiURQuTFn0bMFstjmTF4Skq0ClZDWp4Ru1yZUopSlTqDmg7NKu+1Ia26RMs4LP2k+0zsOEJJNhVMRMmqX7Ao4orVi/3WBHD4+0jcIMgbd6hZtaphAFOWzufD6xYrt6tKVj33CjxcAxXrj6iUkrma5B6tr98I5TepDliB5sSWfjFcLejTdyZF9QeInod2lJQ8TyGrFbua3AS6s+70g+ReICWS6lcBSN7j8tCB5amTk47Amo0ShLx0ANDCGZb88Sqj3U59+giCTeuI9khDb5d9I43OwqaHc6OM5EsahvHGKA02jGlJxJU7gKSaEv60gG8LeUIWpnKAS2WQyfSOnlpKeiRG89BUktCG0STLJUtWFOb/QcYQWrphaE5IlII+NRX4thgu038ZwkVClMMQSKFTVIG3rGV9RXHlAY3YjXCe2Kid228gtiFHg+r8HgdcwAlz2myzfl96xqVOBdPVFNHdRp/fgIX2iaUKKc3G71OUZvh4/yM0hvQELtEpJUAKuMSm3NWbSO1WMApCwUnUCpyJ0zyiKRZUBSTMmOPhTQ1UTVWQz/mGs+1S0qCikh0skF8tfvjDCYg1k1/qDdyKAixc4BSgjVOHnQHWor5wqmykFPWMArLnQtXug2YvCpVAQ5NKjfKAZZxnIkO+x+6wDy3swvgCLqSWK0FKSQakt4f3hhJsjALJYqNRkXOw5CB5w6hBw5qYu2VQFDlWGltnJElCFMV+1Xuz8D5w/hIK2YnkXeoNOkkpUk89orjFyHZotElC2xABjTMcKNvUaQrn2FPWEKLF2YVflptHOQtqCJbAaNRDb5YAC3qD4jKBlGG15ykhM0AuwUxZnLOISS1OHZvSD8FtFZXkjdzowXcyXny+b+AMBNrDXo3Kea/wpPiaRpLsxJupWvxXX/iJI2lP4rV6RSItP4lWgKtygP8tCEd+HEf+cVtKENVZB2wv5vDcXnDRtBYgihBcHYjIxkdSxWOST267rUJ0mXNHvJCuRIqO4/KOrQHBG4bxir/AIe3k6FSFGqTiR+0mo7iX/1RZbWn+Is+1lk7gsm1BbS3AGo2YMfL5w6u66+rUFImKQKsDthOJ0vnkGzhHdlkAnGaqrFwnJuPPaGl42rHKWkE4RmA4BBcbitB57R5Ur6WSvtNqy66ndy25QM1aSFS3IxZBwaAV2r4Rl3zkzpgUgsx7bHsnl96xJ0LR/herWMICzXMlOf1I7okvJEiWCqQwBzADOa0PH1hvwIAN+3uoEt7iK3Db06SlAIlqSlIAD51JAf5wvnhMsJmJmFTKCiNV5v4Ev3bRTrTMVMmHEAADRIy5mGAmhMoJUXY0HDXkI4xfIbJsjr8RVeRjV/GqEutqvkLwpJ/TKXchiC7UObcRCkWCYQrqV406A0auZGsdXlJQpEkoJwlAZhXImtKOwEEWCemWUBK1ByAcWhLsKjKLMxbJWT/AD/1+IyopLSVS3zlS1BCgUkZnZtuUcTpyX4qDcx97Q/6U3AVKGJYBUeyWy5tpFaTcMwEdaoJQkviBd/2bkiBnEgUqRRuDDZfVDA2plks6B1WNR+9OUMfzAEsLQsMaEkgkE7jPL5QsmyUFGEqWkaM3p9YMs1gkplleJyBrkPSEQd0vdRw9WYNbbQoAS5ZxFRKioZsNScxrTeB7bPKEyhklSi7b6Dwfwg8WJASmYlb4kMcJxO5dhTuga0JIwhdASD3bj+BFmRkqx8SysD1D7rmLl4lAOknI6EsKjkRAE6+5s0qQpGEAlIxKDqGTlsoayLShOOUCGUBhJ1G/P0hLPshRMSV9oFXzi7IVUUf9G4OwSfISv2m6xkoqKt8VGpoI5n24oUEySQEe8GdRH0EXG9bPLDIxFAmpIcgsCMi+9flFSu/o/NTPCJtJdO0GYirMcy/0hsYq/kYjlugMYqO7svqaEgzGIUKpI9oAt3PHYkJmKKhRjiKjoPE14xLZbSiaDJQlLJJSSoV7JbEnXMUIgXpDJnyZQwKZLuSkB8tTATiLHfUa9T01/NQuXa5ElWNbKJNNqavr3Uga3X4ZuSQQHKW4RSVzX9okncl4Mum1KC8KSRqCNCNeeUdOIlPEdQOPlAvbCWa7lKWo+9sKBoltcmaCGQUcRUnvHyiSzyVUdOFqOzGvmxh1dswEGWuoOUXThLdnuEblN8Su2eYEklYx01Jz4iNTZ+JYIJrm+jUYdzQyvxeNHZbsk9lqhiRCJKzhIIAPtDwy8IDmBT2rCYgH2Y8ROAcFyggF9Apqd4NP7wBeU04qKcjIv4ViGRbRNoSQ2+kcTFnVucByOaqFRADcGtEzslJArrClOQg23zvdBrk23Pb+YDUqNDgoQpYxflMCQBNGLN0YsoCMSqBRcnZKdT5xXrLIMxaUDX7eGfTy8E2awlCaKm/ooFHCQB1iv8Ab2eaxGrhWzcz8poVPK74tnXWidNDtMmLWHzAUokDuDDugR40I3DEDOoms4rEET2fOJJGt2W1UmamYnNJdtxqDzEerSZyZstK0F0qD+o5iPHniy9DOkHUzDJmH9NbEEn2FGngfnXeLTktVrU3CBpFsdLKORyPnDO9bK4Kk5jMRVJ6iD2Yx+fgs3NPiZZdze46vZCGH7lMIFu+9EzFgLDSxXLV8+Jc5wtsa2lEGoNeD8oIuqYkJUls3c08t4yWY7J3HxjB6hfSWwpShE+UHKlLxAZBNGLd/mYX3ZZgs9ZMPYGbekSf+QYFBqCkgM2YJFe4A+O8GWEFSAgFIzqXq77QyMgBA/EUy8NQ3lHNkvJKEgSEFZDO9S3rSD51vkT5bzElKxlQu41EJLsmKklJUsNqT7LCm0Ob0lIlqE/C+I5OyQo5KO3qeMMpkJQknQ7B6/coVAavn4MQ3laFFQ95KQwO3PugWdNVOVhdqeAbOGi5a0BSwtKRMJdKa58GpClExMuY6RSgb6gxmZWUtanccTqqhSJScJ/WcpDMoVJHlBNkRJAUiY6kkOmjjFtzFa8TEBmdatgns/Pi8cWpw8xRaWAwGZU9AEjm0VUktaDc6RqiYTJu9AlhLqSkPkTU5lyda/KIrZa+tbtE4XD00c6DaALYvEhC0leDJRDkAlmppnU5ZRpMokBMpJI3yfTOLFmIo/M4ABuGzruSuVLmqqAaiuegI1GrcIe2QotEtKmBWjQ6h6n+YDu5aUS/y80BlULHI5jm0aRNXISWAw1zZyNe5oYx0o+4rY+xgX3+/ia6YzwvChsmbnq29PnAUxQIAUTT3nq40rGpd5pWtaiA5FC1OQP0iOxWTrUqUHDGvm3lA2dnYlezLBQq0YXNu1KFIKAa0CnPM92dIktV6YT1QUKZqUAe5vpBUucUS0ofEoJFfr3wqmSmUVFLKVrmw4Q6MR7Bq4qcg+YFIumUqYpaUAfLiQnIfbQ1sd1ygQrq244j4tkIIkWVpady5P0gmdLIS0MhYtr4m7ZZDRaCVjzECylGihoaekT2G1CWSTVw2eUCWickKJFAdIjEdywvqcXuyWmDJfkdfvnCDHiJSz1pDSbaRM/R0VXkRqIDRZVIKiEqwj3iPOM7lWdgR/i6O4un2RJoXB74W3njSyRMW3BR8znD22HF2qMdtO6EFuqS6uUC47G41lI8ZFZA0EvA0vLKHlwXZjPWLHYGQ+I+kbONb0Jku1bjXo7duEY1UUremFObk6b8o8v6bX7+btKlJJ6pHYlD+kZqbdRc8mGkXH8SekfUoNjln9RY/XUPcQcpQ/qUKq2DDUt5fGgFCiomTZuYI3Go3EnJuJpBiGJJZiSQiYqIlKyPdHU2I1ZR2SX/AKGdJ3azzlVylrOuyFHfYw4vq6XBWgcSn6j0jyqWpxF56J9L2wybQeCJh+S//rxirKHHiZZWKmxIpVpIOElhDgWtgwH36wbe9xpmdtDBWbZBXEEZGENlMwKMtQIOoNP7xi8riFT1NXByQ0ZyiCRi0H3zziebKmn/APNaEbYnJPKoiC0Tky0pIfGaEHcUbKhHDcQuXblAuqvHbhyhMYTdy78pQQplru95iAF1ILZZkcIsFrtktclUhau3qAzp1BrrlCS4rX1ctU40SlOJt1Nnz9YT2RM2aTMz1PEmp5wVXbGhI7M54h238Rqq1MMPuhxTM11cFjygIIKqDm3dEClhatXFNdeMGyp6ZVUocaEu/efpCSqCfcY0TQ1CLvK8QAUAPiOTcYMvGSOtAWtKgz6AchWFsq1pCXX/AJimSkDQMVEjZj40hzLmS0qxYUliEswCm5wwqIoo63cAzMTcW2Gy9pSky/069kH67wwu8EAGjPxGe7Q2SuWpJYUOjMawFeVm/Topkg1fN2NPlBMnHC+4bqDGXy9pg9qsw6wLK0MGYANq5pnE0y3S2GKoVrsMqxW1zlqmpQlkpzUptBoOJiW2TkkiWQSggJIcB+I2gK5yASABf94X0b7+JBZbRZ0TiMRUl37VQ7+VKd0NLbegQMSACFDIfWE1qs5kklPvOmrGhzz55xDYpPaHieJiwyN/TKtjWNrOpa1OokPm2nARaLH1auyUuQHBVVyB5QlkFKQ7ARKi8auwpk1D/MPYmI2YpkUEah06fizASRQNl98YhNpLE0bUb8efrHNotYYTE8iNn47PCa8bxLFmAEEdwNwSrcntc8A50heuZi1ppx9IimkFgS9K8IjskrrFMAkAmjn5k5Zwm738xxMYEJsisCwp6gUpTjXWC7RbR1eFSiVOaaNpX1geYvEyKOCRQmtYUWq14VkGv3/aFvJyxUHX2h/FaupDeVqwEpd9RyLwtQnUxNaJpmqdvKHtz3ASypg5I35+kaPGwX0Ipny1q4JdF0maQpdEf8uA4cYY9LekSbBLCEN+ZUnsJoRJTpMWPi+FPeaZ66V9KpdhSZUvCu1NQUKJHFehXsjx2PkdrtC5i1LmKKlqJKlKLkk5kneNdMYQfmZzuWMinLUolSiSpRJJNSoklyTqXeOI7mTCeAckJD4UuXZIOQjiLSs2kRhjUZEkm46SY5jYiSQhVREbxIlJBKVBlAkEHMEUIMRqESScgsYleIjG5atDEklm6OdLJlnZC+3K2Oaf2nbhF+lrs9rQFpUFbEFlpPzEeOwRYLfNkrC5SilQ215jWJ2KM7+peek10zwkKSDMwvVNVNT2k6mmYhDZ7eSGIrFjuPp1KmMm0Dq15Yh7J5jSHtpumRPGMAEn30Z9/wDML5OMCPbO35N7os6NGZNliSScFXByY6cuENZkxcsiWlRKRQAGgbhkTWMs9mMlJCQVcQzvoW9IXWiYB8TnMK34D6xjcrEydg3NfjlWGjqSpIfYHPWG8q0hLAIfCNCKjN21qM+GUVefPcsf7wwuVZVTEaEkb+y5D8oXQFdiHcAxpYymZMExRq9AW8vvaCpkmUVDEo+La6mAbZLMsOOy4rvXThAZmZdtxxB8KGOFz0Rc4FvYMcWi8iFqSzAClcqUyhbar6JQQVcxuzxpagU4mHc7DmYXKQUntUS78P5jjFm7Op1VURsn2dsjC+1Lck8g/wB98Tzb0TNTgT7pbm+XPnAoT2mzA8zFPDxNy6OCIQVYyHcgZatz4wysctCQ5zgSQyKkPQjxDP5vEXVraikk7YsLd6mHgTBcWSjZ7gsiXoSa+bcfdzoAIFkWlZBpkHPAbwMkJWsJXQa7sNuO3Fo3ItOEFIOdPCC+r8mD9I1D7ptqyohVZagRyIgOevErDXnBN22vANO/LI+sAWuftFTnLDxE76IBsxissGEL5szASRppvHCbW/OJ5d3TJhdsI3NPLOB4eO7GgLhcuVFHcG/8gGcUOw+sRSbtmT1YgCEnMqoO7eLTdPRhy4TiPxKYJHjQd8c350ksNidKlfmJw/y5Z7IP9atM+B5xscf6fW2mZl5l6WSXPcKJaSqgCR2pqyABvXSKv0q6fISFSbByVaCKnhKGg/q8Iq/SXpXabaWmqwyh7MpFEDZ/iPE+AhCRGkoCiliTEk7mlkkkkuTUk1JJzJOpiJcSGIlR2cnMZGRkcnZkZGRkSSZG4yMiSSVMw0D0GQ0D5ttEigKmuVG3pnwZ/KMjIkkhjCH5xkZEknSTuIwxkZHJ2cmGF131Ps5eWst8Jy/iMjIk5Lxc/T6Utkz04Dvl55eQi0y1yZw7KkqB0LA9xy843GRce4bnLrqDW24kqLnEDm7uD4xHZbsMtaWYoBc1qfv6RqMhfJw8LfEOnJyAdzL4XMWo9lTPQsTAZmgqAW54gsTwJIqeYfi1YyMjL5XFXGbB7j/GzlhUisUxSVllZk093d9gOELF27HMZdACQw0IP1jIyBYPd3A8slRqDy7UUzGxMDQkGhEOrNakPQh9t+UZGRM+IGW4bmiJNMtDxymfTONRkJFBHwxgirQMRNTQ5RuzWJalFWFdQ2RbkxYZxkZGjxuMr9mKcjOyw2TdE45lKeZfyEMbH0df4lnYBhGRkaWPhYQeojk5WQjuOrJcKUZ4Je+qvJ/MwsvbpZYLLRLz5mwIZ+JBYeJ5RkZDwRVGhFfIsdygdIundstPZx9VL+CWSKcVBj3BhwiqtGRkCJsy41O8Ph844MZGR2ckS4jIjIyJOzmMjIyOSTI2BGRkSSf/2Q==" width = "400">
+        <p>Creamy <strong class ="buldak"> Buldak</strong> Carbonara Ramen</p>
+        <ul>
+            <li>Time: 10 minutes</li>
+            <li>Serves: 1 person </li>
+        </ul>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Ingredients</th>
+                    <th>Quantity</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Samyang <strong class = "buldak">Buldak</strong> carbonara ramen</td>
+                    <td>1 package</td>
+                </tr>
+                <tr>
+                    <td>Tteokbokki</td>
+                    <td>5 pieces</td>
+                </tr>
+                <tr>
+                    <td>dumplings</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>heavy whipping cream </td>
+                    <td>1/3 cupes</td>
+                </tr>
+                <tr>
+                    <td>egg</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>green onion</td>
+                    <td>1/2</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <p><strong>Step 1:</strong> Boil noodles, tteokbokki, and dumplings
+</p><ul>
+    <li>Bring water to a boil in a pot.</li>
+    <li>Add the ramen, 5 pieces of tteokbokki , 3 dumplings , and cook until everything is soft and fully cooked.</li>
+</ul>
+
+    <p><strong>Step 2:</strong>Drain most of the water</p>
+    <ul>
+        <li>Drain the pot, but leave a small amount of water (about 2–3 tablespoons).</li>
+
+    </ul>
+    <p><strong>Step 3:</strong>Add sauce packets</p>
+    <ul>
+        <li>Turn the heat off or very low.</li>
+        <li>Add both packets from the ramen</li>
+        <li>Mix well with the noodles, tteokbokki, and dumplings.</li>
+    </ul>
+    <p><strong>Step 4:</strong>Add heavy whipping cream</p>
+    <ul>
+        <li>Pour in 1/3 cup heavy whipping cream.</li>
+        <li>Stir until the sauce becomes smooth and creamy.</li>
+    </ul>
+    <p><strong>Step 5:</strong>Cook the egg</p>
+    <ul>
+        <li>Fry the egg separately (sunny-side up or soft yolk).</li>
+        <li>Place it on top of the ramen.</li>
+    </ul>
+    <p><strong>Step 6:</strong>Garnish and serve</p>
+    <ul>
+        <li>Sprinkle sliced green onion on top.</li>
+        <li>Serve hot and enjoy:)</li>
+    </ul>
+    <p><em>Source: <a target = "_blank" href="https://youtu.be/4QESgdKApj4">How To Make A Creamy Buldak Carbonara Ramen</a></em></p>
+
+
+
+    <h2 id="recipe2">Recipe #2</h2>
+    <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzfjKn8IHfP8c2UnUbpLc2tdzqGPrKxnsZvg&s" width = "400">
+    <p>Uzbek <strong class = "dimlama">Dimlama</strong></p>
+    <ul>
+        <li>Time: 2–3 hours</li>
+        <li>Serves: 6–8 people</li>
+    </ul>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Ingredients</th>
+                <th>Quantity</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>lamb or beef</td>
+                <td>1 kg</td>
+            </tr>
+            <tr>
+                <td>medium potatoes</td>
+                <td>4–5</td>
+            </tr>
+            <tr>
+                <td>onions</td>
+                <td>2-3</td>
+            </tr>
+            <tr>
+                <td>tomatoes</td>
+                <td>1-2</td>
+            </tr>
+            <tr>
+                <td>sweet bell pepper</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>garlic</td>
+                <td>4-6 cloves</td>
+            </tr>
+            <tr>
+                <td>cabbage</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>vegetable oil</td>
+                <td>2-3 tablespoons </td>
+            </tr>
+            <tr>
+                <td>Salt & black pepper</td>
+                <td>to taste</td>
+            </tr>
+        </tbody>
+    </table>
+    <p><strong>Step 1: </strong>Prepare Ingredients</p>
+    <ul>
+        <li>Wash and cut all vegetables and meat into large chunks.</li>
+        <li>Separate cabbage leaves — these will be used on top later.</li>
+    </ul>
+    <p><strong>Step 2: </strong>Layer the Ingredients</p>
+    <ul>
+        <li>Heat the cauldron and pour in the vegetable oil.</li>
+        <li>Put a layer of meat at the bottom, sprinkle with salt, pepper, and spices.</li>
+        <li>Add a layer of onions over the meat.</li>
+        <li>Place carrots and then potatoes on top.</li>
+        <li>Add tomatoes and bell pepper next.</li>
+        <li>Tuck the garlic cloves among the layers.</li>
+        <li>Cover everything with the cabbage leaves — this helps trap steam and keep it juicy.</li>
+    </ul>
+    <p><strong>Step 3: </strong>Cook Slowly</p>
+    <ul>
+        <li>Close the cauldron with the lid.</li>
+        <li>Cook on very low heat for 1.5–2.5 hours, until the meat is very tender and the vegetables are soft.</li>
+        <li>If the liquids dry up before it’s done, add a little hot water.</li>
+    </ul>
+    <p><strong>Step 4: </strong>Serve</p>
+    <ul>
+        <li>Carefully remove the cabbage leaves on top.</li>
+        <li>Serve by arranging the layers on a large platter or bowl: cabbage first, then vegetables, then meat. Enjoy:)</li>
+    </ul>
+    <p><em>Source : <a href = "https://youtu.be/HwNvUoZYyIA">
+ДЫМЛЯМА узбекская в казане на природе</a></em></p>
+
+
+    
+    <h2 id = "recipe3">Recipe #3</h2>
+    <img src = "https://menunedeli.ru/wp-content/uploads/2019/10/Tykvennyj-sup-s-syrom-500x350-1200x800.jpg" width = "400">
+    <p><strong class = "pumpkin">Pumpkin</strong> cream soup</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Ingredients</th>
+                <th>Quantity</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Pumpkin</td>
+                <td>700 g</td>
+            </tr>
+            <tr>
+                <td>Potatoes</td>
+                <td>2-3</td>
+            </tr>
+            <tr>
+                <td>Carrots</td>
+                <td>1-2</td>
+            </tr>
+            <tr>
+                <td>Onions</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>Garlic</td>
+                <td>1-2 cloves</td>
+            </tr>
+            <tr>
+                <td>Cream(20% fat)</td>
+                <td>70 ml</td>
+            </tr>
+            <tr>
+                <td>Olive oil</td>
+                <td>3 tbsp</td>
+            </tr>
+            <tr>
+                <td>Salt</td>
+                <td>to taste</td>
+            </tr>
+            <tr>
+                <td>Water</td>
+                <td>350 ml</td>
+            </tr>
+        </tbody>
+    </table>
+    <p><strong>Step 1: </strong>Prepare the Vegetables</p>
+    <ul>
+        <li>Cut the <strong class = "pumpkin">pumpkin</strong> into medium-sized pieces.</li>
+        <li>Finely chop the onion.</li>
+        <li>Cut the carrots into pieces and add a little garlic.</li>
+    </ul>
+    <p><strong>Step 2: </strong>Heat the Oil</p>
+    <ul>
+        <li>Heat a little olive oil in a frying pan.</li>
+    </ul>
+    <p><strong>Step 3: </strong>Sauté the Vegetables</p>
+    <ul>
+        <li>Add the onion, carrots, and <strong class = "pumpkin">pumpkin</strong> to the pan.</li>
+        <li>Add the garlic.</li>
+    </ul>
+    <p><strong>Step 4: Simmering the Base</strong></p>
+    <ul>
+        <li>Simmer the <strong class = "pumpkin">pumpkin</strong> with the carrots, onion, and garlic over medium heat for 10 minutes.</li>
+    </ul>
+    <p><strong>Step 5: </strong>Preparing the Potatoes</p>
+    <ul>
+        <li>Cut the potatoes into medium-sized pieces and place them in the pan.</li>
+    </ul>
+    <p><strong>Step 6: </strong>Cooking Until Tender</p>
+    <ul>
+        <li>Add the stewed vegetables to the potatoes.</li>
+        <li>Add a small amount of water and cook until the potatoes are tender.</li>
+    </ul>
+    <p><strong>Step 7: </strong>Blending the Soup</p>
+    <ul>
+        <li>Puree the finished <strong class = "pumpkin">pumpkin</strong> and vegetable soup in a blender until smooth.</li>
+    </ul>
+    <p><strong>Step 8: </strong>Adding the Cream</p>
+    <ul>
+        <li>Pour the cream into the pureed soup and mix well.</li>
+    </ul>
+    <p><em>Source : <a href = "https://www.russianfood.com/recipes/recipe.php?rid=148232">Тыквенный крем-суп</a></em></p>
+    </body>
+</html>
