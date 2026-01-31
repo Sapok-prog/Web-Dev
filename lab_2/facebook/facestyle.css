@@ -1,0 +1,137 @@
+body{
+                font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+                background-color:#f6f7fd
+            }
+            .page{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 50px;
+            }
+            .facebook img{
+                width : 320.94px;
+                height: 106px;
+                margin-bottom: -5px;
+            }.facebook{
+                display: flex;
+                flex-direction: column;
+                
+            }
+            .card{
+                background-color: #fcfdff;
+                padding: 0;
+                width : 397.6px;
+                border-radius: 8px;
+                box-shadow: 2px 4px #0000001a, 0 8px 16px #0000001a;
+                text-align: center;
+                margin-top: 90px;
+            }.facebook p{
+
+                font-size: 1.6em;
+                margin-top: 0;
+                font-weight:500;
+                margin-left: 25px;
+
+            }#username{
+                padding : 15px;
+                border-color: #fcfdff;
+                border: 2px ridge;
+                width: 140%;
+                font-size:100%;
+                border-radius: 6px;
+            }#username:focus{
+                border-color: #0866ff;
+                outline: none; 
+            }
+            #password{
+                border-radius: 6px;
+                border-color: #fcfdff;
+                border: 2px ridge;
+                padding : 15px;
+                width: 140%;
+                font-size:100%;
+            }#password:focus{
+                border-color: #0866ff; /* Change border color to blue on focus */
+                outline: none; 
+            }
+            #enter{
+                font-weight: bold;
+                padding : 13px;
+                width: 155%;
+                font-size:120%;
+                background-color: #0866ff;
+                color : white;
+                border-radius: 6px;
+                border: 0px groove #0866ff;
+                margin-top: 5px;
+            }#enter:hover{
+
+                background-color: #2874ee;
+                border-color: #365899;
+
+            }
+            .top button{
+                font-weight: bold;
+                padding : 10px;
+                padding-top: 14px;
+                padding-bottom: 14px;
+                width: 55%;
+                font-size:100%;
+                color: white;
+                background-color: #0bb221;
+                border: 0px groove #0bc424;
+                border-radius: 6px;
+            }.top button:hover{
+                background-color: #049c18;
+            }.top button:active{
+                background-color: #047d14;
+            }
+            .top{
+
+                padding-bottom: 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap:10px;
+
+            }
+            .top form{
+                margin-top: 10px;
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                align-items: center;
+                
+            }.top a{
+                text-decoration: none;
+                color: #0866ff;;
+
+            }.top a:hover{
+                text-decoration: underline;
+            }.separate{
+                width: 88%;
+                height: 14px;
+                border-bottom: 1px solid #DADDE1;
+                margin-bottom: 15px;
+            }
+            .card-with-words{
+                margin-left: 100px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .create-page-for-diva{
+                margin-top: 20px;
+                font-size: 14px;
+                color: #1c1e21;
+                text-align: center;
+                font-weight: 500;
+                width: 90%;
+            }
+            #create-diva-link{
+                color:black;
+                text-decoration: none;
+            }#create-diva-link:hover{
+                text-decoration: underline;
+            }
