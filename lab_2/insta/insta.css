@@ -1,0 +1,174 @@
+.logo img{
+    width : 100px;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.share-with-friends img{
+    width: 440px;
+}
+.share-with-friends p{
+    font-size: 2.6em;
+    text-align: center;
+    margin-top: 105px;
+    line-height: 60px;
+    margin-bottom: 0;
+}
+.share-with-friends{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-right: 95px;
+    margin-right: 200px;
+    border-right: 3px solid rgba(227, 223, 223, 0.724);
+}
+.box p{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: -155px;
+    font-size: 1.2em;
+}
+.box{
+    display: flex;
+    padding-left : 20px;
+    flex-direction: column;
+    justify-content: center;
+}
+.rega{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.box form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap : 5px;
+}
+#meta{
+    margin-top: 15px;
+    width: 70px;
+}
+body{
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+}#page{
+    display: flex;
+    flex-direction: row;
+}
+#username{
+    border-radius: 17px;
+    padding: 19px;
+    font-size: 1em;
+    width : 220%;
+    border: 1px solid  rgb(150, 146, 149);
+    color: black;
+    outline: none; 
+}
+#username:hover{
+    border: 1px solid  rgb(106, 106, 106);
+    outline: none; 
+}
+#username:focus{
+    border: 1px solid  rgb(106, 106, 106);
+    outline: none; 
+}
+#password{
+    border-radius: 17px;
+    padding: 19px;
+    font-size: 1em;
+    width : 220%;
+    border: 1px solid  rgb(150, 146, 149);
+    color: black;
+    outline: none; 
+}
+#password:focus{
+    border: 1px solid  rgb(106, 106, 106);
+    outline: none; 
+}
+#password:hover{
+    border: 1px solid  rrgb(106, 106, 106);
+    outline: none; 
+}
+.separator{
+    height: 40px;
+}.separator-2{
+    height : 15px;
+} 
+.enter{
+    padding: 13px;
+    font-size: 1em;
+    width : 238%;
+    margin-top: 10px;
+    border-radius: 80px;
+    background-color: rgb(150, 178, 236);
+    color: white;
+    border: 1px solid white;
+}.enter:hover{
+     cursor:no-drop;
+}
+.forget-password{
+    padding: 13px;
+    font-size: 1em;
+    width : 238%;
+    margin-top: 10px;
+    border-radius: 80px;
+    background-color: white;
+    border: 1px solid white;
+}
+.forget-password:hover{
+    background-color: rgb(236, 236, 236);
+}
+.enter-with-facebook{
+    background-color: white;
+    border: 1px solid rgb(150, 146, 149);
+}
+.enter-with-facebook:hover{
+    background-color: rgb(236, 236, 236);
+}
+.create-account{
+    background-color: white;
+    border: 1px solid #0866ff;
+    color: #0866ff;;
+}
+.create-account:hover{
+    background-color: rgb(236, 236, 236);
+}.extra-buttons{
+    color: rgba(113, 113, 113, 0.724);;
+    margin-top: 0;
+    font-size: smaller;
+    word-spacing: 20px;
+    text-align: center;
+}.no-space{
+    word-spacing: 3px;
+}#gradient{
+    background: linear-gradient(to right, orange, rgb(237, 31, 206), purple);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}.end{
+    margin-top: -10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap : 20px;
+}
+#lan{
+    border: 1px solid white;
+    color: rgba(113, 113, 113, 0.724);
+    font-size: smaller;
+    font-family: 'Times New Roman', Times, serif;
+}
+.linked{
+    display: flex;
+    flex-direction: column;
+    margin-left: -345px;
+}.linked-buttons{
+    padding: 13px;
+    font-size: 1em;
+    width : 262%;
+    margin-top: 10px;
+    border-radius: 80px;
+}
