@@ -1,12 +1,14 @@
 body{
                 font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-                background-color:#f6f7fd
+                background-color:#f6f7fd;
+
             }
             .page{
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 margin-top: 50px;
+                margin-bottom: 200px;
             }
             .facebook img{
                 width : 320.94px;
@@ -134,4 +136,25 @@ body{
                 text-decoration: none;
             }#create-diva-link:hover{
                 text-decoration: underline;
+            }.whole-page{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }.languages{
+                font-size: 0.7em;
+                color : #8d8d8d;
+                word-spacing: 15px;
+                line-height: 15px;
+                width: 980px;
+            }.buttom-of-page{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background-color: white;
+                width: 2000px;
+            }.other-details{
+                border-top : 1px solid #c6c6c6;
+                width: 980px;
+            }.no-space{
+                word-spacing: 3px;
             }
