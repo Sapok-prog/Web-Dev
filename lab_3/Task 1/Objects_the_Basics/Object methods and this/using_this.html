@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script>
+           function makeUser() {
+                return {
+                    name: "John",
+                    ref: this
+                };
+            }
+
+            let user = makeUser();
+
+            alert( user.name ); // What's the result? 
+            //result will be John 
+        </script>
+    </body>
+</html>

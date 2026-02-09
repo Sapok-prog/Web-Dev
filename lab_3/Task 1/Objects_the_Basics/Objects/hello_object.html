@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script>
+            let user = {};
+            user.name = "John";
+            user.surname = "Smith";
+
+            user.name = "Pete";
+            delete user.name;
+
+            for (let key in user){
+
+                alert(user[key]);
+
+            }
+        </script>
+    </body>
+</html>

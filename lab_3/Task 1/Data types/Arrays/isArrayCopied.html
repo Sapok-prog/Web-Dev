@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script>
+            let styles = ["Jazz", "Blues"];
+            styles.push("Rock-n-Roll");
+
+            styles[Math.floor((styles.length / 2))] = "Classics";
+            styles.shift(1);
+            styles.unshift("Rap" , "Reggae");
+
+            for(let element of styles){
+
+                alert(element);
+
+            }
+        </script>
+    </body>
+</html>
+

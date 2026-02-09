@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script>
+            function checkSpam(spam){
+
+                if((spam.toLowerCase()).includes("viagra") || (spam.toUpperCase()).includes("XXX")){
+                    return true;
+                }return false;
+
+            }
+
+            alert(checkSpam('buy ViAgRA now'));
+            alert(checkSpam('free xxxxx'));
+            alert(checkSpam("innocent rabbit"));
+        </script>
+    </body>
+</html>
+

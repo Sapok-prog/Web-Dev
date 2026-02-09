@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prime Numbers</title>
+</head>
+<body>
+    <script>
+        let enterNum = prompt("Enter the num" , "");
+        enterNum = Number(enterNum);
+
+        for(let i = 2;i <= enterNum;i++){
+            let counterOfDeviders = 0;
+
+            for(let j = 0;j <= i;j++){
+
+                if(i % j === 0){
+                    counterOfDeviders++;
+                }
+
+            }if(counterOfDeviders === 2){
+                alert(`${i} is prime`)
+            }
+        }
+    </script>
+</body>
+</html>

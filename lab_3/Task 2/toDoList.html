@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>To-Do List</title>
+        <link rel = "stylesheet" href="toDoListStyle.css">
+    </head>
+    <body>
+        <div id="header">
+            <p>toDo List</p>
+        </div>
+        <div id="box-of-tasks">
+            <div id="to-Do-Title">
+                <p>To-Do List</p>
+            </div>
+            <div id="task-manipulator">
+                <input type="text" id="taskInput" placeholder="Add a new task" required>
+                <button id="add-btn" onclick="newElement()">Add</button>
+
+                <ul id = "taskList"></ul>
+            </div>
+            <script>
+                function newElement() {
+                    const input = document.getElementById("taskInput");
+                    const text = input.value.trim();
+
+                    if (text === "") {
+                        alert("You must write something!");
+                        return;
+                    }
+
+                    const li = document.createElement("li");
+
+                    const checkbox = document.createElement("input");
+                    checkbox.type = "checkbox";
+                    checkbox.className = "done-checkbox";
+
+                    const spanText = document.createElement("span");
+                    spanText.className = "task-text";
+                    spanText.textContent = text;
+
+                    const del = document.createElement("span");
+                    del.className = "close";
+                    del.textContent = "🗑️";
+
+                    // delete handler
+                    del.onclick = function () {
+                        li.remove();
+                    };
+
+                    // check handler
+                    checkbox.onchange = function () {
+                        li.classList.toggle("checked", checkbox.checked);
+                    };
+
+                    li.appendChild(checkbox);
+                    li.appendChild(spanText);
+                    li.appendChild(del);
+
+                    document.getElementById("taskList").appendChild(li);
+                    input.value = "";
+                }
+            </script>
+        </div>
+    </body>
+</html>

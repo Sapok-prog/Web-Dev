@@ -1,0 +1,62 @@
+#header{
+    background-color: rgb(228, 119, 223);
+    margin-top: -21px;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+#header p{
+    font-size: 1.3em;
+    color: white;
+    padding: 10px;
+    padding-left: 30px;
+}
+#box-of-tasks{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+li{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    border : 2px solid gray;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    font-size: 1.2em;
+    padding-left: 5px;
+    width:457px;
+    margin-left: -37px;
+}
+.close{
+    margin-left: auto;
+}
+#taskInput{
+
+    width: 400px;
+    padding: 5px;
+    font-size: 1.1em;
+
+}
+#add-btn{
+    padding: 5px;
+    font-size: 1.1em;
+}
+#to-Do-Title{
+    font-size: 1.3em;
+    margin-left: -370px;
+    font-weight: 500;
+}
+
+ul li.checked {
+   
+    background-color: rgb(29, 184, 29);
+    border: 2px solid rgb(132, 241, 132);
+    color: white;
+}
+
+ul li.checked::before {
+    font-weight: bold;
+}

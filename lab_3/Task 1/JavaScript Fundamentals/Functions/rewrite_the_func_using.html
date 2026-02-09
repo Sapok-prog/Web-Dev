@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script>
+            function checkAgeV1(age){
+                return ((age > 18) ? true : confirm('Did parents allow you?'));
+            }
+            function checkAgeV2(age){
+                return (age > 18 || confirm('Did parents allow you?'))
+            }
+
+            alert(checkAgeV1(21));
+            alert(checkAgeV2(16));
+        </script>
+    </body>
+</html>

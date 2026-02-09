@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script>
+            function extractCurrencyValue(cost){
+                return +cost.slice(1);
+            }
+
+            alert( extractCurrencyValue('$120') === 120);
+        </script>
+    </body>
+</html>
+

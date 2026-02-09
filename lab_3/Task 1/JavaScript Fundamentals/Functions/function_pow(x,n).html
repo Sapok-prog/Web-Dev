@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script>
+            function pow(x , n){
+                let result = 1;
+                for(let i = 1;i <= n;i++){
+                    result *= x;
+                }return result;
+            }
+
+            let x = prompt("enter num", "");
+            let n = prompt("enter power of num" , "");
+
+            alert(pow(x , n));
+        </script>
+    </body>
+</html>
