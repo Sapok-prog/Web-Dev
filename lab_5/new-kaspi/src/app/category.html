@@ -1,0 +1,8 @@
+<div class="buttons blue">
+  <span (click)="select(1)" id="buttons-text">КНИГИ</span>
+  <span (click)="select(2)" id="buttons-text">ДЕТСКИЕ ТОВАРЫ</span>
+  <span (click)="select(3)" id="buttons-text">АПТЕКА</span>
+  <span (click)="select(4)" id="buttons-text">МЕБЕЛЬ</span>
+</div>
+
+<app-product-list [categoryID]="categoryID"/>

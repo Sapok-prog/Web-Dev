@@ -1,0 +1,38 @@
+<div class="products">
+<div *ngFor="let product of filteredProducts" class="card">
+  <div class="gallery">
+    <button
+      class="arrow left"
+      (click)="prevImage(product)">
+      ‹
+    </button>
+    <img [src]="product.images[product.selectedIndex]" class="card-img">
+    <button
+      class="arrow right"
+      (click)="nextImage(product)"
+    >
+      ›
+    </button>
+  </div>
+  <a [href]="product.link">
+    <p class="name">{{ product.name }}</p>
+    <p class="description">{{ product.description }}</p>
+  </a>
+  <p class="gray">
+    Рейтинг : <span class="rating">{{product.rating}}</span> 🌟
+  </p>
+  <p></p>
+  <div class="bottom-part">
+    <div class="price-part">
+      <span class="gray">Цена: </span>
+      <span class="price">{{ product.price }}</span>
+    </div>
+    <span></span>
+    <div class="share">
+      <img src="https://static.vecteezy.com/system/resources/previews/018/930/564/non_2x/whatsapp-logo-whatsapp-icon-whatsapp-transparent-free-png.png" class="whatsapp" (click)="shareWhatsApp(product)">
+      <img src="https://static.vecteezy.com/system/resources/previews/023/986/562/non_2x/telegram-logo-telegram-logo-transparent-telegram-icon-transparent-free-free-png.png" class="telegram" (click)="shareTelegram(product)">
+    </div>
+  </div>
+  <app-product-item [product]="product" (delete)="deleteProduct($event)"/>
+</div>
+</div>
