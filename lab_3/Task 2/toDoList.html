@@ -13,12 +13,10 @@
                 <p>To-Do List</p>
             </div>
             <div id="task-manipulator">
-                <div>
                 <input type="text" id="taskInput" placeholder="Add a new task" required>
                 <button id="add-btn" onclick="newElement()">Add</button>
 
                 <ul id = "taskList"></ul>
-                </div>
             </div>
             <script>
                 function newElement() {
@@ -54,17 +52,9 @@
                         li.classList.toggle("checked", checkbox.checked);
                     };
 
-                    let form = document.getElementById("box-of-tasks");
-                    if(form.height > "700px"){
-
-                        let divider = form.createElement("div");
-                        form.appendChild(divider);
-
-                    }else{
-                        li.appendChild(checkbox);
-                        li.appendChild(spanText);
-                        li.appendChild(del);
-                    }
+                    li.appendChild(checkbox);
+                    li.appendChild(spanText);
+                    li.appendChild(del);
 
                     document.getElementById("taskList").appendChild(li);
                     input.value = "";
